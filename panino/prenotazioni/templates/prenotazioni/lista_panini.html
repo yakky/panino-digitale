@@ -5,6 +5,13 @@
   <title>Title</title>
 </head>
 <body>
-<h1>Ciao</h1>
+<h1>Panini</h1>
+{% for panino in panini %}
+<p>
+  <h2>{{ panino.nome }}</h2>
+  {{ panino.descrizione }}
+  <b>{{ panino.prezzo }}</b>
+</p>
+{% endfor %}
 </body>
 </html>
