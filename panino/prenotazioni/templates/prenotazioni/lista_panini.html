@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Panini</title>
 </head>
 <body>
 <h1>Panini</h1>
+<h4><a href="{% url 'aggiungi-panino' %}">aggiungi</a></h4>
 {% for panino in panini %}
 <p>
   <h2>{{ panino.nome }}</h2>

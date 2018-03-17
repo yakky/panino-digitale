@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Panini</title>
+</head>
+<body>
+<h1>Panini</h1>
+<h4><a href="{% url 'lista-panini' %}">lista</a></h4>
+<form method="post">{% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Salva</button>
+</form>
+</body>
+</html>

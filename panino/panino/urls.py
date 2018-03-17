@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from prenotazioni.views import lista_panini
 
+from prenotazioni.views import aggiungi_panino, lista_panini
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', lista_panini),
+    path('nuovo/', aggiungi_panino, name='aggiungi-panino'),
+    path('', lista_panini, name='lista-panini'),
 ]
