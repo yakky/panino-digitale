@@ -9,8 +9,10 @@
 {% for panino in panini %}
 <p>
   <h2>{{ panino.nome }}</h2>
-  {{ panino.descrizione }}
-  <b>{{ panino.prezzo }}</b>
+  inserito il <i>{{ panino.inserimento|date:"d F Y" }}</i><br>
+  disponibile dal <i>{{ panino.disponibilita|date:"d F Y" }}</i><br>
+  {{ panino.descrizione }}<br>
+  prezzo: <b>{{ panino.prezzo }} €</b>
 </p>
 {% endfor %}
 </body>
